@@ -26,7 +26,7 @@ namespace N_m3u8DL_RE
             ServicePointManager.DefaultConnectionLimit = 1024;
             try { Console.CursorVisible = true; } catch { }
 
-            string loc = "en-US";
+            string loc = "zh-CN";
             string currLoc = Thread.CurrentThread.CurrentUICulture.Name;
             if (currLoc == "zh-CN" || currLoc == "zh-SG") loc = "zh-CN";
             else if (currLoc.StartsWith("zh-")) loc = "zh-TW";
