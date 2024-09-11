@@ -652,9 +652,8 @@ namespace N_m3u8DL_RE.DownloadManager
             {
                 progressColumns = progressColumns.SkipLast(1).ToArray();
             }
-            */
             progress.Columns(progressColumns);
-
+            */
             if (DownloaderConfig.MyOptions.MP4RealTimeDecryption && !DownloaderConfig.MyOptions.UseShakaPackager
                 && DownloaderConfig.MyOptions.Keys != null && DownloaderConfig.MyOptions.Keys.Length > 0)
                 Logger.WarnMarkUp($"[darkorange3_1]{ResString.realTimeDecMessage}[/]");
