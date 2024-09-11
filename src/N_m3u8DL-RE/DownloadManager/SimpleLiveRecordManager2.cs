@@ -805,6 +805,7 @@ namespace N_m3u8DL_RE.DownloadManager
             progress.AutoRefresh = DownloaderConfig.MyOptions.LogLevel != LogLevel.OFF;
             
             //进度条的列定义
+            /*
             var progressColumns = new ProgressColumn[]
             {
                 new TaskDescriptionColumn() { Alignment = Justify.Left },
@@ -819,7 +820,7 @@ namespace N_m3u8DL_RE.DownloadManager
                 progressColumns = progressColumns.SkipLast(1).ToArray();
             }
             progress.Columns(progressColumns);
-
+            */
             await progress.StartAsync(async ctx =>
             {
                 //创建任务
